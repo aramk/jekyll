@@ -10,7 +10,7 @@ TMP_DIR="tmp"
 git checkout $SOURCE_BRANCH
 jekyll build -d $TMP_DIR
 git checkout $DEST_BRANCH
-git rm -qr .
+# git rm -qr .
 cp -r $TMP_DIR/. .
 rm -r $TMP_DIR
 git add -A
