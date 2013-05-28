@@ -11,7 +11,7 @@ TMP_DIR="tmp"
 git checkout $SOURCE_BRANCH
 jekyll build -d $TMP_DIR
 git checkout $DEST_BRANCH
-# This will removed previous files, which we may not want (e.g. CNAME)
+# This will remove previous files, which we may not want (e.g. CNAME)
 # git rm -qr .
 cp -r $TMP_DIR/. .
 # Delete this script from the output
